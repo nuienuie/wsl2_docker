@@ -37,4 +37,7 @@ wsl --import docker-desktop "D:\Docker\vms\docker-desktop" "D:\Docker\system\doc
 wsl --import docker-desktop-data "D:\Docker\vms\docker-desktop-data" "D:\Docker\system\docker-desktop-data.tar" --version 2
 ```
 `wsl <옵션> <등록이름> "<생성할 vhd 위치>" "<백업 tar 경로>" <wsl 버전>`
-백업한 이미지를 위의 명령으로 등록과 동시에 vhd 파일을 생성한다.
+
+백업한 이미지를 위의 명령으로 등록과 동시에 vhd 파일을 생성한다. 필자는 `D:\Docker\vms\` 의 경로로 지정하였으며, 주의할 점은 동일 폴더에 2개 이상의 vhd는 생성할 수 없다.
+
+이후 도커를 재시작하면 이동된 경로로 사용이 가능해진다.
