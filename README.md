@@ -112,6 +112,21 @@ passwd: password updated successfully
 
 > apt-get install sudo vim wget -y
 
+> cd root
+> wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+> bash Miniconda3-latest-Linux-x86_64.sh
+> enter
+> q
+> yes
+> enter
+> yes
+> export PATH="/root/miniconda3/bin:$PATH"
+> source ~/miniconda3/etc/profile.d/conda.sh
 
+> conda create -n test python=3.7.5
+> conda activate test
+> pip install django 
 ```
 필자가 원하는 기본적인 셋팅은 위와 같다.
+
+위과정은 도커에 접속에서 간단한 사용법이며 일반적으로 도커파일(스크립트)을 생성하여 위 작업을 자동화 한다.
